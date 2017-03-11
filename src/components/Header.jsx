@@ -1,5 +1,7 @@
 import React from 'react';
 
+"use strict";
+
 class Header extends React.Component {
 
     constructor(props) {

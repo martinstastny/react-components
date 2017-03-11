@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import World from './World';
+import YouTube from './YouTube';
 
 class Home extends React.Component {
 
@@ -17,6 +18,7 @@ class Home extends React.Component {
                 <main className="main-content">
                     <div className="container">
                         <World/>
+                        <YouTube videoid="MhkGQAoc7bc"/>
                     </div>
                 </main>
             </div>
