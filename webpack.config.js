@@ -47,8 +47,7 @@ const config = {
             {
                 test: /\.(js|jsx)$/,
                 loader: 'babel-loader?cacheDirectory',
-                exclude: /node_modules/,
-                options: {presets: ['es2015']}
+                exclude: /node_modules/
             },
             {
                 test: /\.json$/,
@@ -79,6 +78,10 @@ const config = {
                 //     use: 'css-loader!sass-loader',
                 // })
             },
+            {
+                test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+                loader: 'file-loader'
+            }
         ]
     },
     plugins: [

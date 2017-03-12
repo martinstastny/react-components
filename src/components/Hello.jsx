@@ -1,9 +1,12 @@
 import React from 'react';
 
-
-const Hello = ({greet, message}) => (
-    <h1>{greet} {message}</h1>
-);
+class Hello extends React.Component {
+    render() {
+        return(
+            <h1>{this.props.greet}, {this.props.message}</h1>
+        )
+    }
+}
 
 Hello.propTypes = {
     greet: React.PropTypes.string.isRequired,

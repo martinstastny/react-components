@@ -1,8 +1,11 @@
 import React from 'react';
 import Hello from './Hello';
 
+class World extends React.Component {
 
-export default class World extends React.Component {
+    static defaultProps = {
+        greet: 'Lol'
+    };
 
     constructor(props) {
         super(props);
@@ -32,15 +35,12 @@ export default class World extends React.Component {
         return (
             <div className="world-card">
                 <Hello greet={renderGreeting} message="World!"/>
-                <a href="#" onClick={this.slangGreet}>Slang</a> <br />
-                <a href="#" onClick={this.hindiGreet}>Hindi</a> <br /><br/>
-                <input type="text" value={this.state.value} placeholder="Enter a name"
-                       onChange={this.handleNameChange}/>
+                <a onClick={this.slangGreet}>Slang</a> <br />
+                <a onClick={this.hindiGreet}>Hindi</a> <br /><br/>
+                <input type="text" value={this.state.value} placeholder="Enter a name" onChange={this.handleNameChange}/>
             </div>
         );
     }
 }
 
-World.defaultProps = {
-    greet: 'lol',
-};
+export default World;
