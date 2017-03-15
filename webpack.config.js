@@ -41,7 +41,7 @@ const config = {
             timings: true
         }
     },
-    devtool: "eval",
+    devtool: "source-map",
     module: {
         rules: [
             {

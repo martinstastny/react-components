@@ -26,7 +26,7 @@ class Button extends React.Component {
         let size = this.props.size ? `${this.props.size}` : '';
         renderClass = `${renderClass} ${size}`;
 
-        return(
+        return (
             <a className={renderClass} href={this.props.href}>{this.props.title}</a>
         )
     }

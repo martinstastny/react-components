@@ -13,7 +13,6 @@ class Workflow extends React.Component {
 
     constructor(props) {
         super(props);
-        console.log(props);
         this.state = {stepsIndex: 0};
         this.cycleSequence = this.cycleSequence.bind(this);
         this.cycleScenario = this.cycleScenario.bind(this);
