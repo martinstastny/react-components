@@ -1,4 +1,5 @@
 import React from 'react';
+import Navigation from './Navigation';
 
 "use strict";
 
@@ -16,12 +17,7 @@ class Header extends React.Component {
                         <a href="/" className="navbar-brand">React Speed</a>
                     </div>
                     <div id="navbar" className="collapse navbar-collapse">
-                        <ul className="nav navbar-nav">
-                            <li className="active"><a href="">Book</a></li>
-                            <li><a href="">Code</a></li>
-                            <li><a href="">Demos</a></li>
-                            <li><a href="">Website</a></li>
-                        </ul>
+                        <Navigation/>
                     </div>
                 </div>
             </nav>

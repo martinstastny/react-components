@@ -35,13 +35,14 @@ const config = {
         hot: true,
         contentBase: path.join(__dirname, "./dist"),
         compress: true,
+        historyApiFallback: true,
         port: 7000,
         stats: {
             colors: true,
             timings: true
         }
     },
-    devtool: "source-map",
+    devtool: "eval",
     module: {
         rules: [
             {

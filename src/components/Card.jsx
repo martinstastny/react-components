@@ -23,11 +23,11 @@ class Card extends React.Component {
     }
 
     render() {
-        const boxStyle = props.plain ? "card" : "card-box";
-        const cardSyle = props.className ? `${boxStyle} ${props.className}` : boxStyle;
+        const boxStyle = this.props.plain ? "card" : "card-box";
+        const cardSyle = this.props.className ? `${boxStyle} ${this.props.className}` : boxStyle;
 
         return (
-            <div onClick={props.onClick} className={cardSyle}>{props.children}</div>
+            <div onClick={this.props.onClick} className={cardSyle}>{this.props.children}</div>
         )
     }
 
