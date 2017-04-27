@@ -1,24 +1,16 @@
 import React from 'react';
 import Card from './Card';
 
-class AboutBook extends React.Component {
+const AboutBook = () => (
 
-    constructor(props) {
-        super(props);
-    }
+  <div className="card-wrapper">
+    <Card>
+      <a href="https://google.com">
+        <img alt="" src="https://placehold.it/200x100" />
+      </a>
+    </Card>
+  </div>
 
-    render() {
-        return (
-            <div className="card-wrapper">
-                <Card>
-                    <a href="https://google.com">
-                        <img src="https://placehold.it/200x100"/>
-                    </a>
-                </Card>
-            </div>
-        )
-    }
-
-}
+);
 
 export default AboutBook;

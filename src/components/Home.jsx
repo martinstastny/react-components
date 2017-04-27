@@ -1,15 +1,8 @@
-import {map, range} from 'lodash';
+// jscs:disable
+import { map, range } from 'lodash';
 import React from 'react';
-import Header from './Header';
 import World from './World';
-import YouTube from './YouTube';
-import GitHub from './GitHub';
-import Workflow from './Workflow';
-import Button from './Button';
-import InputGroup from './InputGroup';
-import InputField from './InputField';
-import InputLabel from './InputLabel';
-import {series, singleSeries, cloudSeries} from 'fixtures/charts';
+import { series, singleSeries, cloudSeries } from 'fixtures/charts';
 const {
     Chart,
     Bars, Cloud, Labels, Lines, Pies, RadialLines, Ticks,
@@ -20,7 +13,7 @@ class Home extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {series, cloudSeries, singleSeries, hovered: {} };
+        this.state = {series, cloudSeries, singleSeries, hovered: {}};
         this.updateSeries = this.updateSeries.bind(this);
     }
 
@@ -35,15 +28,16 @@ class Home extends React.Component {
         }));
 
         this.setState({series, cloudSeries, singleSeries, hovered: {}});
-    }
+    };
 
     render() {
         return (
             <div>
                 <World/>
             </div>
-        );
+        )
     }
 }
 
 export default Home;
+
