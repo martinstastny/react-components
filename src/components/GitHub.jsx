@@ -42,7 +42,8 @@ class GitHub extends React.Component {
   render() {
     if (this.state.data) {
       return (
-        <div>{this.state.data.full_name}, {this.state.data.stargazers_count}, {this.state.data.open_issues}</div>
+        <div>{this.state.data.full_name}, {this.state.data.stargazers_count},
+          {this.state.data.open_issues}</div>
       );
     }
 

@@ -9,6 +9,7 @@ import Home from './components/Home';
 import MissingRoute from './components/MissingRoute';
 import Landing from './components/Landing';
 import Todo from './components/todo/TodoApp';
+import SearchComponent from './components/search/SearchComponent';
 
 
 const history = createBrowserHistory();
@@ -18,9 +19,10 @@ render((
     <div>
       <Landing>
         <Switch>
-          <Route path="/" exact={true} component={Todo} />
+          <Route path="/" exact component={Todo} />
           <Route path="/book" component={AboutBook} />
           <Route path="/embeds" component={AboutEmbeds} />
+          <Route path="/search" component={SearchComponent} />
           <Route path="/todo" component={Todo} />
           <Route path="*" component={MissingRoute} />
         </Switch>
@@ -28,4 +30,5 @@ render((
     </div>
   </Router>
 ), document.getElementById('app'));
+
 

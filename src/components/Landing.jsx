@@ -12,9 +12,11 @@ class Landing extends React.Component {
       <div>
         <Header />
         <main className="main-content">
-          <div className="row">
-            <div className="container">
-              {this.props.children}
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-12">
+                {this.props.children}
+              </div>
             </div>
           </div>
         </main>
