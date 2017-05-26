@@ -1,3 +1,3 @@
-# react-learning
+# react-components
 
-Learning ReactJS 
+Set of reusable React components
